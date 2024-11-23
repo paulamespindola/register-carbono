@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("register_caborno")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fdbcb6180705d18ff58542aa496d939b1e58b0f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("register_caborno")]
 [assembly: System.Reflection.AssemblyTitleAttribute("register_caborno")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

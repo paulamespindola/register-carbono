@@ -7,14 +7,13 @@ using register_caborno.Services;
 [ApiController]
 public class UserController : ControllerBase
 {
-    private readonly IUserService _userService;  // Usando a interface IUserService
+    private readonly IUserService _userService; 
 
-    // Injeção de dependência do IUserService
     public UserController(IUserService userService)
     {
         _userService = userService;
     }
-
+    [Authorize]
     [HttpGet("{id}")]
     public async Task<IActionResult> GetUserById(int id)
     {
@@ -24,8 +23,8 @@ public class UserController : ControllerBase
         return Ok(user);
     }
 
-    [HttpPut("{id}")]
     [Authorize]
+    [HttpPut("{id}")]
     public async Task<IActionResult> UpdateUser(int id, [FromBody] UserUpdateDto userUpdateDto)
     {
         var updated = await _userService.UpdateUserAsync(id, userUpdateDto);
@@ -44,6 +43,7 @@ public class UserController : ControllerBase
         return Ok("User deleted successfully.");
     }
 
+    [Authorize]
     [HttpGet("{id}/activities")]
     public async Task<IActionResult> GetActivitiesByUser(int id)
     {

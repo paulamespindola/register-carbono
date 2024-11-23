@@ -17,6 +17,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Registrar o IUserService e UserService para DI
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IActivityService, ActivityService>();
+
 
 // Configuração do JWT
 var jwtConfig = builder.Configuration.GetSection("Jwt");
