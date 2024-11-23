@@ -136,3 +136,4 @@ C:\Users\paula\source\repos\register_caborno\obj\Debug\net8.0\register_caborno.p
 C:\Users\paula\source\repos\register_caborno\obj\Debug\net8.0\register_caborno.genruntimeconfig.cache
 C:\Users\paula\source\repos\register_caborno\obj\Debug\net8.0\ref\register_caborno.dll
 C:\Users\paula\source\repos\register_caborno\bin\Debug\net8.0\global.json
+C:\Users\paula\source\repos\register_caborno\obj\Debug\net8.0\register_caborno.sourcelink.json
