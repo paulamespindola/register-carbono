@@ -43,13 +43,11 @@ namespace register_caborno.Services
                 return null;
             }
 
-            // Converte a entidade User em um DTO
             return new UserDto
             {
-                Id = user.Id,
                 Name = user.Name,
                 Email = user.Email,
-                Role = user.Role
+     
             };
         }
 
