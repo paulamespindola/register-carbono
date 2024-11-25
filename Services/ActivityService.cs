@@ -19,7 +19,9 @@ namespace register_caborno.Services
             var activity = new Activity
             {
                 Descricao = activityDto.Descricao,
-                Emissao = activityDto.Emissao,
+                EmissoesCO2 = activityDto.EmissoesCO2,
+                DataRegistro = activityDto.DataRegistro != default ? activityDto.DataRegistro : DateTime.Now,
+                EhReducao = activityDto.EhReducao,
                 UserId = activityDto.UserId,
             };
 
@@ -34,7 +36,7 @@ namespace register_caborno.Services
             if (activity == null) return false;
 
             activity.Descricao = activityDto.Descricao ?? activity.Descricao;
-            activity.Emissao = activityDto.Emissao != 0 ? activityDto.Emissao : activity.Emissao;
+            activity.EmissoesCO2 = activityDto.EmissoesCO2 != 0 ? activityDto.EmissoesCO2 : activity.EmissoesCO2;
 
             _context.Activities.Update(activity);
             await _context.SaveChangesAsync();
@@ -59,7 +61,7 @@ namespace register_caborno.Services
             return new ActivityDto
             {
                 Descricao = activity.Descricao,
-                Emissao = activity.Emissao,
+                EmissoesCO2 = activity.EmissoesCO2,
                 UserId = activity.UserId,
             };
         }
@@ -69,7 +71,7 @@ namespace register_caborno.Services
             return await _context.Activities.Select(a => new ActivityDto
             {
                 Descricao = a.Descricao,
-                Emissao = a.Emissao,
+                EmissoesCO2 = a.EmissoesCO2,
                 UserId = a.UserId,
             }).ToListAsync();
         }
