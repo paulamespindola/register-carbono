@@ -8,3 +8,6 @@
 # Diretórios de build
 /bin/
 /obj/
+
+bin/Debug/
+obj/Debug/

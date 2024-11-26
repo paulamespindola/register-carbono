@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\register_caborno.props" />
-</Project>

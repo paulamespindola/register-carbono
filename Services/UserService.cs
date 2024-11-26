@@ -88,7 +88,7 @@ namespace register_caborno.Services
                 Activities = user.Activities.Select(a => new ActivityDto
                 {
                     Descricao = a.Descricao,
-                    Emissao = a.Emissao
+                    EmissoesCO2 = a.EmissoesCO2
                 }).ToList()
             };
         }
@@ -101,7 +101,7 @@ namespace register_caborno.Services
             return user.Activities.Select(a => new ActivityDto
             {
                 Descricao = a.Descricao,
-                Emissao = a.Emissao
+                EmissoesCO2 = a.EmissoesCO2
             }).ToList();
         }
 
