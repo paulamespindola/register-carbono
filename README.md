@@ -1,35 +1,36 @@
 # Register Carbono
 
-O **Register Carbono** é uma aplicação desenvolvida para o registro de atividades, com foco no monitoramento e gerenciamento de ações que afetam o meio ambiente. O sistema permite que usuários registrem e acompanhem atividades que contribuem para a redução da pegada de carbono, ajudando a melhorar a sustentabilidade e a responsabilidade ambiental.
+O **Register Carbono** Ã© uma aplicaÃ§Ã£o desenvolvida para o registro de atividades, com foco no monitoramento e gerenciamento de aÃ§Ãµes que afetam o meio ambiente. O sistema permite que usuÃ¡rios registrem e acompanhem atividades que contribuem para a reduÃ§Ã£o da pegada de carbono, ajudando a melhorar a sustentabilidade e a responsabilidade ambiental.
 
 ## Tecnologias Utilizadas
 
 - **ASP.NET Core** - Framework para o desenvolvimento da API.
-- **Entity Framework Core** - ORM para manipulação do banco de dados.
+- **Entity Framework Core** - ORM para manipulaÃ§Ã£o do banco de dados.
 - **SQL Server** - Banco de dados relacional utilizado.
-- **Swagger** - Documentação da API.
-- **JWT Authentication** - Autenticação via token JWT para segurança das rotas da API.
+- **Swagger** - DocumentaÃ§Ã£o da API.
+- **JWT Authentication** - AutenticaÃ§Ã£o via token JWT para seguranÃ§a das rotas da API.
 
 ## Funcionalidades
 
+- Cadastro de usuÃ¡rios.
 - Registro de atividades.
 - Listagem de atividades cadastradas.
-- Edição e remoção de atividades.
-- Autenticação de usuários com JWT.
-- Integração com o banco de dados SQL Server.
+- EdiÃ§Ã£o e remoÃ§Ã£o de atividades.
+- AutenticaÃ§Ã£o de usuÃ¡rios com JWT.
+- IntegraÃ§Ã£o com o banco de dados SQL Server.
 
-## Pré-requisitos
+## PrÃ©-requisitos
 
-Antes de rodar o projeto, você precisa ter os seguintes pré-requisitos instalados:
+Antes de rodar o projeto, vocÃª precisa ter os seguintes prÃ©-requisitos instalados:
 
 - **.NET 8.0** ou superior.
-- **SQL Server** ou qualquer banco de dados compatível com SQL Server.
-- **Visual Studio Code**, **Visual Studio** ou outro editor de código preferido.
+- **SQL Server** ou qualquer banco de dados compatÃ­vel com SQL Server.
+- **Visual Studio Code**, **Visual Studio** ou outro editor de cÃ³digo preferido.
 - **Postman** ou outro cliente API para testar as rotas.
 
-## Configuração do Ambiente
+## ConfiguraÃ§Ã£o do Ambiente
 
-1. **Clone o repositório**:
+1. **Clone o repositÃ³rio**:
 
    ```bash
    git clone https://github.com/paulamespindola/register-carbono.git
