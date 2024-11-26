@@ -16,6 +16,8 @@ namespace register_caborno.Models
 
         [Required]
         public string Password { get; set; }
+        [Required]
+        public string TypeUser { get; set; }
         [JsonIgnore]
         public ICollection<Activity> Activities { get; set; }  // Relacionamento inverso
 
